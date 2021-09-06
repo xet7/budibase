@@ -26,7 +26,7 @@ const BUILTIN_DEFINITIONS = {
   ROW_SAVED: {
     name: "Row Created",
     event: "row:save",
-    icon: "ri-save-line",
+    icon: "SaveFloppy",
     tagline: "Row is added to {{inputs.enriched.table.name}}",
     description: "Fired when a row is added to your database",
     stepId: "ROW_SAVED",
@@ -66,7 +66,7 @@ const BUILTIN_DEFINITIONS = {
   ROW_UPDATED: {
     name: "Row Updated",
     event: "row:update",
-    icon: "ri-refresh-line",
+    icon: "Refresh",
     tagline: "Row is updated in {{inputs.enriched.table.name}}",
     description: "Fired when a row is updated in your database",
     stepId: "ROW_UPDATED",
@@ -106,7 +106,7 @@ const BUILTIN_DEFINITIONS = {
   ROW_DELETED: {
     name: "Row Deleted",
     event: "row:delete",
-    icon: "ri-delete-bin-line",
+    icon: "Delete",
     tagline: "Row is deleted from {{inputs.enriched.table.name}}",
     description: "Fired when a row is deleted from your database",
     stepId: "ROW_DELETED",
@@ -138,7 +138,7 @@ const BUILTIN_DEFINITIONS = {
   WEBHOOK: {
     name: "Webhook",
     event: "web:trigger",
-    icon: "ri-global-line",
+    icon: "GlobeGrid",
     tagline: "Webhook endpoint is hit",
     description: "Trigger an automation when a HTTP POST webhook is hit",
     stepId: "WEBHOOK",
@@ -174,7 +174,7 @@ const BUILTIN_DEFINITIONS = {
   APP: {
     name: "App Action",
     event: "app:trigger",
-    icon: "ri-window-fill",
+    icon: "Homepage",
     tagline: "Automation fired from the frontend",
     description: "Trigger an automation from an action inside your app",
     stepId: "APP",
@@ -205,7 +205,7 @@ const BUILTIN_DEFINITIONS = {
   CRON: {
     name: "Cron Trigger",
     event: "cron:trigger",
-    icon: "ri-timer-line",
+    icon: "Clock",
     tagline: "Cron Trigger (<b>{{inputs.cron}}</b>)",
     description: "Triggers automation on a cron schedule.",
     stepId: "CRON",
