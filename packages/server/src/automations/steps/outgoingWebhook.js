@@ -19,7 +19,7 @@ const BODY_REQUESTS = [RequestType.POST, RequestType.PUT, RequestType.PATCH]
 module.exports.definition = {
   name: "Outgoing webhook",
   tagline: "Send a {{inputs.requestMethod}} request",
-  icon: "ri-send-plane-line",
+  icon: "Send",
   description: "Send a request of specified method to a URL",
   type: "ACTION",
   stepId: "OUTGOING_WEBHOOK",

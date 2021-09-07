@@ -3,7 +3,7 @@ const queryController = require("../../api/controllers/query")
 module.exports.definition = {
   name: "External Data Connector",
   tagline: "Execute Data Connector",
-  icon: "ri-database-2-line",
+  icon: "Data",
   description: "Execute a query in an external data connector",
   type: "ACTION",
   stepId: "EXECUTE_QUERY",

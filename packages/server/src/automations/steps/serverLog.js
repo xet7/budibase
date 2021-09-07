@@ -7,7 +7,7 @@
 module.exports.definition = {
   name: "Backend log",
   tagline: "Console log a value in the backend",
-  icon: "ri-server-line",
+  icon: "Monitoring",
   description: "Logs the given text to the server (using console.log)",
   type: "ACTION",
   stepId: "SERVER_LOG",

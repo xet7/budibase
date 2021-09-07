@@ -18,7 +18,7 @@ module.exports.PrettyLogicConditions = PrettyLogicConditions
 module.exports.definition = {
   name: "Filter",
   tagline: "{{inputs.field}} {{inputs.condition}} {{inputs.value}}",
-  icon: "ri-git-branch-line",
+  icon: "Branch2",
   description: "Filter any automations which do not meet certain conditions",
   type: "LOGIC",
   stepId: "FILTER",

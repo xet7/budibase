@@ -3,7 +3,7 @@ const scriptController = require("../../api/controllers/script")
 module.exports.definition = {
   name: "JS Scripting",
   tagline: "Execute JavaScript Code",
-  icon: "ri-terminal-box-line",
+  icon: "Code",
   description: "Run a piece of JavaScript code in your automation",
   type: "ACTION",
   stepId: "EXECUTE_SCRIPT",
