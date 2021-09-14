@@ -4,7 +4,8 @@
     "intelligentLoading": true,
     "deviceAwareness": true,
     "state": true,
-    "customThemes": true
+    "customThemes": true,
+    "devicePreview": true
   },
   "layout": {
     "name": "Layout",
@@ -1228,6 +1229,12 @@
         "type": "boolean",
         "label": "Stacked",
         "key": "stacked",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "label": "Horizontal",
+        "key": "horizontal",
         "defaultValue": false
       },
       {
