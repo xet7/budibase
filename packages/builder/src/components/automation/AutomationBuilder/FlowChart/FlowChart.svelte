@@ -86,7 +86,9 @@
       >
         <FlowItem {testDataModal} {testAutomation} {onSelect} {block} />
         {#if idx !== blocks.length - 1}
-          <Arrow />
+          <div class="separator" />
+          <Icon name="AddCircle" size="S" />
+          <div class="separator" />
         {/if}
       </div>
     {/each}
@@ -97,6 +99,14 @@
 </section>
 
 <style>
+  .separator {
+    width: 1px;
+    height: 25px;
+    border-left: 1px dashed var(--grey-4);
+    color: var(--grey-4);
+    /* center horizontally */
+    align-self: center;
+  }
   .canvas {
     margin: 0 -40px calc(-1 * var(--spacing-l)) -40px;
     overflow-y: auto;
