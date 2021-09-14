@@ -8,7 +8,12 @@ export function createAdminStore() {
     multiTenancy: false,
     sandbox: false,
     onboardingProgress: 0,
-    checklist: { apps: 0, smtp: false, adminUser: false, sso: false },
+    checklist: {
+      apps: { checked: false },
+      smtp: { checked: false },
+      adminUser: { checked: false },
+      sso: { checked: false },
+    },
   }
 
   const admin = writable(DEFAULT_CONFIG)
@@ -20,20 +25,14 @@ export function createAdminStore() {
         `/api/global/configs/checklist?tenantId=${tenantId}`
       )
       const json = await response.json()
-
-      const onboardingSteps = Object.keys(json)
-
-      const stepsComplete = onboardingSteps.reduce(
-        (score, step) => score + Number(!!json[step]),
-        0
-      )
+      const totalSteps = Object.keys(json).length
+      const completedSteps = Object.values(json).filter(x => x?.checked).length
 
       await getFlags()
       admin.update(store => {
         store.loaded = true
         store.checklist = json
-        store.onboardingProgress =
-          (stepsComplete / onboardingSteps.length) * 100
+        store.onboardingProgress = (completedSteps / totalSteps) * 100
         return store
       })
     } catch (err) {
