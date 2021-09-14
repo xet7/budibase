@@ -1,11 +1,9 @@
 <script>
   import { ModalContent, Icon, Detail, Badge, TextArea } from "@budibase/bbui"
-  import TestDataModal from "./TestDataModal.svelte"
 
   export let testResult
   let inputToggled
   let outputToggled
-  $: console.log(testResult)
 </script>
 
 <ModalContent
