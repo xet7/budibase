@@ -19,7 +19,7 @@
     "dev:builder": "rollup -cw"
   },
   "dependencies": {
-    "@budibase/bbui": "^0.9.185-alpha.6",
+    "@budibase/bbui": "^1.3.20",
     "@budibase/standard-components": "^0.9.139",
     "@budibase/string-templates": "^0.9.185-alpha.6",
     "regexparam": "^1.3.0",
